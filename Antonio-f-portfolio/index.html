@@ -4,7 +4,43 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Antonio Falco's Portfolio</title>
+        <title>Antonio Falco - Portfolio</title>
+        <link rel="stylesheet" href="./styles.css" />
     </head>
-    <body></body>
+    <!-- Create a basic 'scrolling' webpage. Will need to block out each section to stack -->
+    <body>
+        <!-- Navigation Bar: Stationary at top of page -->
+        <header class="navbar">
+            <!-- Top Right Logo -->
+            <h2 class="navbar__logo">_Toni_</h2>
+            <!-- Page Links -->
+            <nav class="navbar__links">
+                <ul class="navbar-ul">
+                    <li class="navbar-ul__item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="navbar-ul__item">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="navbar-ul__item">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="navbar-ul__item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="navbar-ul__item">
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Stacking page blocks -->
+        <div class="pages">
+            <section id="home" class="home"></section>
+            <section id="about" class="about"></section>
+            <section id="projects" class="projects"></section>
+            <section id="skills" class="skills"></section>
+            <section id="contact" class="contact"></section>
+        </div>
+    </body>
 </html>
