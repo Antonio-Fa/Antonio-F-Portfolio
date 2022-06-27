@@ -95,3 +95,12 @@ a:hover {
 .card__heading--font-black {
   color: #0d0d0d;
 }
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 80vh;
+  width: 95%;
+}
