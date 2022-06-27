@@ -89,6 +89,9 @@ a:hover {
 .card--white {
   background-color: white;
 }
+.card__heading {
+  font-size: 50px;
+}
 .card__heading--font-black {
   color: #0d0d0d;
 }
