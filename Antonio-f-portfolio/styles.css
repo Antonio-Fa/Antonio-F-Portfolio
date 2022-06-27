@@ -104,3 +104,13 @@ a:hover {
   min-height: 80vh;
   width: 95%;
 }
+.card-box__para {
+  text-align: right;
+  word-break: normal;
+  margin-left: 15%;
+  margin-top: 5%;
+  font-size: 40px;
+}
+.card-box__para--margin-bottom {
+  margin-bottom: 8%;
+}

@@ -108,4 +108,16 @@ a:hover {
     align-items: flex-start;
     min-height: 80vh;
     width: 95%;
+
+    &__para {
+        text-align: right;
+        word-break: normal;
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 40px;
+
+        &--margin-bottom {
+            margin-bottom: 8%;
+        }
+    }
 }
