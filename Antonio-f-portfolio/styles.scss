@@ -100,3 +100,12 @@ a:hover {
         }
     }
 }
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 80vh;
+    width: 95%;
+}
