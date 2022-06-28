@@ -96,11 +96,21 @@ a:hover {
   color: #0d0d0d;
 }
 
-.card-box {
+.card-box-about {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 80vh;
   width: 95%;
+}
+.card-box-about__para {
+  text-align: right;
+  word-break: normal;
+  margin-left: 15%;
+  margin-top: 5%;
+  font-size: 40px;
+}
+.card-box-about__para--margin-bottom {
+  margin-bottom: 8%;
 }

@@ -101,11 +101,23 @@ a:hover {
     }
 }
 
-.card-box {
+.card-box-about {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 80vh;
     width: 95%;
+
+    &__para {
+        text-align: right;
+        word-break: normal;
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 40px;
+
+        &--margin-bottom {
+            margin-bottom: 8%;
+        }
+    }
 }
