@@ -96,7 +96,7 @@ a:hover {
   color: #0d0d0d;
 }
 
-.card-box {
+.card-box-about {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -104,13 +104,13 @@ a:hover {
   min-height: 80vh;
   width: 95%;
 }
-.card-box__para {
+.card-box-about__para {
   text-align: right;
   word-break: normal;
   margin-left: 15%;
   margin-top: 5%;
   font-size: 40px;
 }
-.card-box__para--margin-bottom {
+.card-box-about__para--margin-bottom {
   margin-bottom: 8%;
 }
