@@ -7,9 +7,13 @@
 }
 
 @mixin flexcenter {
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin cardbox {
+    min-height: 100%;
+    width: 95%;
 }
 
 body {
@@ -24,7 +28,6 @@ body {
     width: 100%;
     position: fixed;
     background-color: #d5eaf2;
-    font-size: 2vh;
 
     &__logo {
         margin-right: 5vw;
@@ -54,6 +57,7 @@ a:hover {
 }
 
 .page-layout {
+    display: flex;
     @include flexcenter();
     flex-direction: column;
     flex-wrap: nowrap;
@@ -61,6 +65,7 @@ a:hover {
 }
 
 .page-content {
+    display: flex;
     @include flexcenter();
     flex-direction: column;
     flex-wrap: nowrap;
@@ -81,6 +86,7 @@ a:hover {
 }
 
 .card {
+    display: flex;
     @include flexcenter();
     flex-direction: column;
     min-height: 80vh;
@@ -96,17 +102,15 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 100%;
-    width: 95%;
+    @include cardbox();
     font-size: 4vw;
 
     &--align-center {
-        justify-content: center;
-        align-items: center;
+        @include flexcenter();
     }
 
     &__heading {
-        font-size: 1em;
+        font-size: 50px;
         margin-left: 2%;
         &--font-black {
             color: #0d0d0d;
@@ -117,10 +121,21 @@ a:hover {
         text-align: right;
         margin-left: 15%;
         margin-top: 5%;
-        font-size: 0.7em;
+        font-size: 40px;
 
         &--margin-bottom {
             margin-bottom: 8%;
         }
     }
+}
+
+.card-box-gallery {
+    display: flex;
+    flex-direction: row;
+    @include cardbox();
+    justify-content: center;
+
+    // &__projects {
+    //     display: flex;
+    // }
 }
