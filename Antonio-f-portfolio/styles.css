@@ -18,16 +18,13 @@ body {
   width: 100%;
   position: fixed;
   background-color: #d5eaf2;
+  font-size: 2vh;
 }
 .navbar__logo {
   margin-right: 5vw;
   padding: 10px;
   color: #0d0d0d;
 }
-.navbar__links {
-  display: block;
-}
-
 .navbar-ul {
   list-style: none;
   display: flex;
@@ -89,28 +86,34 @@ a:hover {
 .card--white {
   background-color: white;
 }
-.card__heading {
-  font-size: 50px;
-}
-.card__heading--font-black {
-  color: #0d0d0d;
-}
 
-.card-box-about {
+.card-box {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  min-height: 80vh;
+  min-height: 100%;
   width: 95%;
+  font-size: 4vw;
 }
-.card-box-about__para {
+.card-box--align-center {
+  justify-content: center;
+  align-items: center;
+}
+.card-box__heading {
+  font-size: 1em;
+  margin-left: 2%;
+}
+.card-box__heading--font-black {
+  color: #0d0d0d;
+}
+.card-box__para {
   text-align: right;
   word-break: normal;
   margin-left: 15%;
   margin-top: 5%;
-  font-size: 40px;
+  font-size: 0.7em;
 }
-.card-box-about__para--margin-bottom {
+.card-box__para--margin-bottom {
   margin-bottom: 8%;
 }
