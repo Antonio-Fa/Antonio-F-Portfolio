@@ -33,14 +33,12 @@ body {
 .navbar-ul__item {
   padding: 10px;
 }
-
-a {
+.navbar-ul__link {
   color: #0d0d0d;
   font-weight: bold;
   text-decoration: none;
 }
-
-a:hover {
+.navbar-ul__link:hover {
   color: #bf0f30;
 }
 
@@ -125,4 +123,20 @@ a:hover {
   width: 95%;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.card-box-gallery__projects {
+  padding: 10px;
+  box-shadow: rgb(61, 61, 61);
+}
+.card-box-gallery__projects-desc {
+  padding-bottom: 20px;
+  max-width: 300px;
+}
+.card-box-gallery__projects-links {
+  font-weight: bold;
+  color: #bf0f30;
+  text-decoration: none;
+}
+.card-box-gallery__projects-links:hover {
+  color: #6ab9d9;
 }

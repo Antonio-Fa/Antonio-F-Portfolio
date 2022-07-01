@@ -6,9 +6,9 @@
     padding: 0;
 }
 
-@mixin flexcenter {
-    justify-content: center;
-    align-items: center;
+@mixin flexpos($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
 }
 
 @mixin cardbox {
@@ -22,8 +22,7 @@ body {
 .navbar {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    @include flexpos(space-between, center);
     flex-wrap: nowrap;
     width: 100%;
     position: fixed;
@@ -44,21 +43,21 @@ body {
     &__item {
         padding: 10px;
     }
-}
 
-a {
-    color: #0d0d0d;
-    font-weight: bold;
-    text-decoration: none;
-}
+    &__link {
+        color: #0d0d0d;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
-a:hover {
-    color: #bf0f30;
+    &__link:hover {
+        color: #bf0f30;
+    }
 }
 
 .page-layout {
     display: flex;
-    @include flexcenter();
+    @include flexpos(center, center);
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
@@ -66,7 +65,7 @@ a:hover {
 
 .page-content {
     display: flex;
-    @include flexcenter();
+    @include flexpos(center, center);
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 100vh;
@@ -87,7 +86,7 @@ a:hover {
 
 .card {
     display: flex;
-    @include flexcenter();
+    @include flexpos(center, center);
     flex-direction: column;
     min-height: 80vh;
     width: 95%;
@@ -100,13 +99,12 @@ a:hover {
 .card-box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    @include cardbox();
+    @include flexpos(flex-start, flex-start);
+    @include cardbox;
     font-size: 4vw;
 
     &--align-center {
-        @include flexcenter();
+        @include flexpos(center, center);
     }
 
     &__heading {
@@ -133,12 +131,27 @@ a:hover {
 .card-box-gallery {
     display: flex;
     flex-direction: row;
-    @include cardbox();
+    @include cardbox;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    // &__projects-image {
-    //     padding: 10px;
-    //     box-shadow: rgb(61, 61, 61);
-    // }
+    &__projects {
+        padding: 10px;
+        box-shadow: rgb(61, 61, 61);
+    }
+
+    &__projects-desc {
+        padding-bottom: 20px;
+        max-width: 300px;
+    }
+
+    &__projects-links {
+        font-weight: bold;
+        color: #bf0f30;
+        text-decoration: none;
+    }
+
+    &__projects-links:hover {
+        color: #6ab9d9;
+    }
 }
