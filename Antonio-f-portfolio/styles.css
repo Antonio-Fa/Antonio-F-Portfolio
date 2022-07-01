@@ -103,6 +103,7 @@ a:hover {
 .card-box__heading {
   font-size: 50px;
   margin-left: 2%;
+  margin-bottom: 3%;
 }
 .card-box__heading--font-black {
   color: #0d0d0d;
@@ -110,7 +111,7 @@ a:hover {
 .card-box__para {
   text-align: right;
   margin-left: 15%;
-  margin-top: 5%;
+  margin-bottom: 5%;
   font-size: 40px;
 }
 .card-box__para--margin-bottom {
@@ -122,5 +123,6 @@ a:hover {
   flex-direction: row;
   min-height: 100%;
   width: 95%;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

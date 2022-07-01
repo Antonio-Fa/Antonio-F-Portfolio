@@ -112,6 +112,7 @@ a:hover {
     &__heading {
         font-size: 50px;
         margin-left: 2%;
+        margin-bottom: 3%;
         &--font-black {
             color: #0d0d0d;
         }
@@ -120,7 +121,7 @@ a:hover {
     &__para {
         text-align: right;
         margin-left: 15%;
-        margin-top: 5%;
+        margin-bottom: 5%;
         font-size: 40px;
 
         &--margin-bottom {
@@ -133,9 +134,11 @@ a:hover {
     display: flex;
     flex-direction: row;
     @include cardbox();
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-    // &__projects {
-    //     display: flex;
+    // &__projects-image {
+    //     padding: 10px;
+    //     box-shadow: rgb(61, 61, 61);
     // }
 }
