@@ -17,7 +17,13 @@
 }
 
 body {
-    background-color: #d5eaf2;
+    background: #d5eaf2;
+    background: linear-gradient(
+        180deg,
+        rgba(213, 234, 242, 1) 1%,
+        rgba(69, 99, 191, 1) 50%,
+        rgba(3, 44, 166, 1) 100%
+    );
 }
 .navbar {
     display: flex;
@@ -70,18 +76,19 @@ body {
     flex-wrap: nowrap;
     min-height: 100vh;
     width: 100%;
-    &--blue-one {
-        background-color: #6ab9d9;
-    }
-    &--blue-two {
-        background-color: #5670bf;
-    }
-    &--blue-three {
-        background-color: #4563bf;
-    }
-    &--blue-four {
-        background-color: #032ca6;
-    }
+
+    // &--blue-one {
+    //     background-color: #6ab9d9;
+    // }
+    // &--blue-two {
+    //     background-color: #5670bf;
+    // }
+    // &--blue-three {
+    //     background-color: #4563bf;
+    // }
+    // &--blue-four {
+    //     background-color: #032ca6;
+    // }
 }
 
 .card {

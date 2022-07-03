@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #d5eaf2;
+  background: #d5eaf2;
+  background: linear-gradient(180deg, rgb(213, 234, 242) 1%, rgb(69, 99, 191) 50%, rgb(3, 44, 166) 100%);
 }
 
 .navbar {
@@ -59,18 +60,6 @@ body {
   flex-wrap: nowrap;
   min-height: 100vh;
   width: 100%;
-}
-.page-content--blue-one {
-  background-color: #6ab9d9;
-}
-.page-content--blue-two {
-  background-color: #5670bf;
-}
-.page-content--blue-three {
-  background-color: #4563bf;
-}
-.page-content--blue-four {
-  background-color: #032ca6;
 }
 
 .card {
