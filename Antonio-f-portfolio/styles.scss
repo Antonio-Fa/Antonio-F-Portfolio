@@ -98,9 +98,9 @@ body {
     min-height: 80vh;
     width: 95%;
 
-    &--white {
-        background-color: white;
-    }
+    // &--white {
+    //     background-color: white;
+    // }
 }
 
 .card-box {
@@ -145,6 +145,7 @@ body {
     &__projects {
         padding: 10px;
         box-shadow: rgb(61, 61, 61);
+        background-color: white;
     }
 
     &__projects-desc {
