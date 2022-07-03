@@ -114,6 +114,42 @@ body {
         @include flexpos(center, center);
     }
 
+    &__contact {
+        display: flex;
+        @include flexpos(flex-start, flex-start);
+        flex-wrap: wrap;
+    }
+
+    &__contact-item {
+        margin-left: 50px;
+        &--text {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        &--link {
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        &--link:hover {
+            color: #bf0f30;
+        }
+    }
+
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        @include flexpos(center, center);
+    }
+
+    &__skills-item {
+        padding: 10px;
+        margin-left: 10px;
+        &--text {
+            font-size: 40px;
+        }
+    }
+
     &__heading {
         font-size: 50px;
         margin-left: 2%;
@@ -135,6 +171,10 @@ body {
     }
 }
 
+.icon {
+    font-size: 50px;
+}
+
 .card-box-gallery {
     display: flex;
     flex-direction: row;
@@ -144,8 +184,8 @@ body {
 
     &__projects {
         padding: 10px;
-        box-shadow: rgb(61, 61, 61);
         background-color: white;
+        margin-bottom: 20px;
     }
 
     &__projects-desc {
