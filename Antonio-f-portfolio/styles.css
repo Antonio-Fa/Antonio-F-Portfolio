@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #d5eaf2;
+  background: #d5eaf2;
+  background: linear-gradient(180deg, rgb(213, 234, 242) 1%, rgb(69, 99, 191) 50%, rgb(3, 44, 166) 100%);
 }
 
 .navbar {
@@ -33,14 +34,12 @@ body {
 .navbar-ul__item {
   padding: 10px;
 }
-
-a {
+.navbar-ul__link {
   color: #0d0d0d;
   font-weight: bold;
   text-decoration: none;
 }
-
-a:hover {
+.navbar-ul__link:hover {
   color: #bf0f30;
 }
 
@@ -61,18 +60,6 @@ a:hover {
   flex-wrap: nowrap;
   min-height: 100vh;
   width: 100%;
-}
-.page-content--blue-one {
-  background-color: #6ab9d9;
-}
-.page-content--blue-two {
-  background-color: #5670bf;
-}
-.page-content--blue-three {
-  background-color: #4563bf;
-}
-.page-content--blue-four {
-  background-color: #032ca6;
 }
 
 .card {
@@ -125,4 +112,20 @@ a:hover {
   width: 95%;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.card-box-gallery__projects {
+  padding: 10px;
+  box-shadow: rgb(61, 61, 61);
+}
+.card-box-gallery__projects-desc {
+  padding-bottom: 20px;
+  max-width: 300px;
+}
+.card-box-gallery__projects-links {
+  font-weight: bold;
+  color: #bf0f30;
+  text-decoration: none;
+}
+.card-box-gallery__projects-links:hover {
+  color: #6ab9d9;
 }
